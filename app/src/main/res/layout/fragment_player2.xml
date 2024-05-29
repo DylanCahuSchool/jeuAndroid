@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/player_name"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:hint="Pseudo du joueur 2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/level_easy"
+            android:layout_width="396dp"
+            android:layout_height="wrap_content"
+            android:text="Facile"
+        android:onClick="radioButtonhandler"/>
+
+        <RadioButton
+            android:id="@+id/level_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moyen"
+            android:onClick="radioButtonhandler"/>
+
+        <RadioButton
+            android:id="@+id/level_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Difficile"
+            android:onClick="radioButtonhandler"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
